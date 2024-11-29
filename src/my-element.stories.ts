@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/web-components'
 import { html } from 'lit'
+import { fn } from '@storybook/test';
 
 import './my-element'
 
@@ -8,9 +9,10 @@ export default {
   parameters: {
     layout: 'centered',
   },
-  argTypes: {
-    onOpen: { action: 'onClick' },
-  },
+  // argTypes: {
+  //   onOpen: { action: 'onClick' },
+  // },
+  args: { onClick: fn() },
   render: (args) => html`<my-element @click=${args.onOpen} name=${args.name}></my-element>`,
 } as Meta
 

@@ -13,19 +13,23 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "lit": "^2.0.2",
     "@babel/core": "^7.17.2",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/web-components": "^6.4.19",
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-actions": "^8.4.5",
+    "@storybook/addon-essentials": "^8.4.5",
+    "@storybook/addon-links": "^8.4.5",
+    "@storybook/web-components": "^8.4.5",
+    "@storybook/web-components-vite": "^8.4.5",
     "babel-loader": "^8.2.3",
-    "storybook-builder-vite": "^0.1.15",
+    "lit": "^2.0.2",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@storybook/test": "^8.4.5"
   }
 }
